@@ -1,1 +1,11 @@
 <h1>Hello, I'm Christina! </h1>
+{% if page.title == "Home"
+   or page.title == "Início"
+   or page.title == "Blog"
+   or page.title == "Projects"
+   or page.title == "Projetos"
+   or page.title == "Tags"
+   or page.title == "Categorias"
+%}{% assign showHeader = true %}{% endif %}
+
+{% if showHeader == true %}
